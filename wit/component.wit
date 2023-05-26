@@ -1,0 +1,4 @@
+default world hello {
+  import blub: func(name: string) -> string
+  export hello: func(name: string) -> string
+}

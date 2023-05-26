@@ -1,0 +1,18 @@
+[package]
+name = "banana"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wit-bindgen = { git = "https://github.com/bytecodealliance/wit-bindgen", version = "0.6.0" }
+
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata]
+wasm-name-section = false
+wasm-producers-section = false
